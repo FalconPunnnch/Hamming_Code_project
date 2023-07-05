@@ -15,4 +15,10 @@ mediante LEDS conectados a cada Arduino.
 
 5. En caso en Arduino 1, se altere “a propósito” un bit de datos del código generado en PC1, éste error debe ser detectado en el receptor y se debe indicar por pantalla en qué posición está el bit con error.
 
-## Proyecto presentado con éxito el 04/07/23, clase de las 7-10pm.
+### Proyecto presentado con éxito el 04/07/23, clase de las 7-10pm.
+
+### Sobre los archivos:
+- Maestro.py: Contiene los bloques de código que generan el código hamming a partir de una cadena de 7 bits y la interfaz gráfica de usuario que permite ingresar dicha cadena. También muestra en pantalla el código hamming generado. 
+- Maestro.ino: Contiene el código ejecutado en la Arduino IDE 1.18.1. La cadena de 7 bits también puede ser ingresada desde el monitor serial. Se refleja exitosamente en el circuito. Envía el código hamming procesado al Arduino Esclavo, ya que establece la conexión I2C.
+- Esclavo.py: Contiene la interfaz gráfica que refleja el código hamming recibido desde el Maestro. A su vez fuerza un error siempre en el segundo bit de paridad y muestra un mensaje sobre ello.
+- Esclavo.ino: Procesa los datos enviados desde el Arduino Maestro, gracias a la conexión I2C establecida, en el Esclavo.
