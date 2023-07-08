@@ -19,6 +19,6 @@ mediante LEDS conectados a cada Arduino.
 
 ### Sobre los archivos:
 - Maestro.py: Contiene los bloques de código que generan el código hamming a partir de una cadena de 7 bits y la interfaz gráfica de usuario que permite ingresar dicha cadena. También muestra en pantalla el código hamming generado. 
-- Maestro.ino: Contiene el código ejecutado en la Arduino IDE 1.18.1. La cadena de 7 bits también puede ser ingresada desde el monitor serial. Se refleja exitosamente en el circuito. Envía el código hamming procesado al Arduino Esclavo, ya que establece la conexión I2C.
+- Maestro.ino: Contiene el código ejecutado en la Arduino IDE 1.8.11. La cadena de 7 bits también puede ser ingresada desde el monitor serial. Se refleja exitosamente en el circuito. Envía el código hamming procesado al Arduino Esclavo, ya que establece la conexión I2C.
 - Esclavo.py: Contiene la interfaz gráfica que refleja el código hamming recibido desde el Maestro. A su vez fuerza un error siempre en el segundo bit de paridad y muestra un mensaje sobre ello.
 - Esclavo.ino: Procesa los datos enviados desde el Arduino Maestro, gracias a la conexión I2C establecida, en el Esclavo.
