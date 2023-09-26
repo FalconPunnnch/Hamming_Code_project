@@ -1,5 +1,6 @@
 # Hamming Code Project: Comunicación I2C entre Arduinos Mega 2560.
 ## Proyecto para el curso de Comunicación de Datos de la Universidad de Lima.
+### Profesor: Felipe Daniel Argandoña Martinez.
 
 ### Requisitos Funcionales
 
@@ -15,7 +16,7 @@ mediante LEDS conectados a cada Arduino.
 
 5. En caso en Arduino 1, se altere “a propósito” un bit de datos del código generado en PC1, éste error debe ser detectado en el receptor y se debe indicar por pantalla en qué posición está el bit con error.
 
-### Proyecto presentado con éxito el 04/07/23, clase de las 7-10pm.
+### Proyecto presentado con éxito el 04/07/23, clase de las 7-10pm. Calificación: 18/20.
 
 ### Sobre los archivos:
 - Maestro.py: Contiene los bloques de código que generan el código hamming a partir de una cadena de 7 bits y la interfaz gráfica de usuario que permite ingresar dicha cadena. También muestra en pantalla el código hamming generado. 
